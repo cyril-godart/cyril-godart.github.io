@@ -1,0 +1,180 @@
+/* ===========================
+   Thème pro minimal + animations
+   =========================== */
+:root{
+  --bg:#f7f9fc; --panel:#ffffff; --text:#0f172a; --muted:#6b7280; --accent:#0f172a;
+  
+  /* Couleurs des colonnes (Exactes selon tes images) */
+  --red:#b91c1c;       /* Administrer */
+  --orange:#c2410c;    /* Connecter */
+  --yellow:#b45309;    /* Programmer (Correction vers une teinte plus dorée/moutarde) */
+  --lime:#65a30d;      /* Rapprocher (Vert Chartreuse) */
+  --blue:#172554;      /* Unifier (Bleu très foncé) */
+  
+  --border:#e5e7eb; --shadow:rgba(12,23,42,0.1);
+}
+
+*{box-sizing:border-box}
+html,body{
+  margin:0;height:100%;
+  font-family: 'Inter', system-ui, sans-serif;
+  color:var(--text);
+  background: linear-gradient(-45deg, #f7f9fc, #eef2f7, #f9fafb, #ffffff);
+  background-size: 400% 400%;
+  animation: gradientFlow 20s ease infinite;
+  -webkit-font-smoothing:antialiased;
+}
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+a{color:inherit;text-decoration:none}
+.container{max-width:1280px;margin:0 auto;padding:24px} /* Élargi pour 5 colonnes */
+
+/* ===========================
+   Header
+   =========================== */
+.site-header{position:sticky;top:0;background:rgba(255,255,255,0.8);backdrop-filter: blur(8px);z-index:40;border-bottom:1px solid var(--border)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;color:var(--accent)}
+.brand-text{line-height:1}
+.brand-text small{display:block;color:var(--muted);font-size:11px}
+.main-nav{display:flex;gap:18px}
+.main-nav a{padding:8px 10px;border-radius:8px;color:var(--muted);font-weight:600;transition:transform .18s, background .18s}
+.main-nav a:hover{background:#eef2f7;color:var(--accent);transform:translateY(-2px)}
+.mobile-toggle{display:none;border:0;background:none;padding:8px;cursor:pointer}
+.mobile-toggle .bar{display:block;width:22px;height:2px;background:var(--accent);margin:4px 0;border-radius:2px}
+
+/* ===========================
+   Canvas background
+   =========================== */
+#bgFlow{position:fixed;inset:0;width:100vw;height:100vh;z-index:-1}
+
+/* ===========================
+   Cards & Intro
+   =========================== */
+.card{padding:28px;border-radius:14px;background:var(--panel);margin-top:18px;box-shadow:0 8px 26px var(--shadow)}
+.intro{display:flex;gap:24px;align-items:center;overflow:hidden;position:relative}
+.intro-left{flex:1}
+.big{font-size:1.8rem;margin:0 0 10px 0;font-weight:800;letter-spacing:-0.02em}
+.lead{margin:10px 0 20px;color:var(--muted);line-height:1.6}
+.meta-row{display:flex;gap:12px;align-items:center}
+.btn{background:var(--accent);color:#fff;padding:10px 16px;border-radius:10px;font-weight:600;transition:transform .18s}
+.btn:hover{transform:translateY(-2px)}
+.btn-outline{border:1px solid var(--border);padding:9px 14px;border-radius:10px;color:var(--accent);font-weight:600}
+
+.section-title{margin:40px 0 6px 0;font-size:1.4rem;color:var(--accent);font-weight:700}
+.section-sub{color:var(--muted);margin-top:0;margin-bottom:20px}
+
+/* ===========================
+   Competence Grid (5 Colonnes)
+   =========================== */
+.competence-grid{
+  display:grid;
+  /* 5 Colonnes de taille égale */
+  grid-template-columns:repeat(5, 1fr); 
+  gap:16px;
+  align-items:start;
+}
+
+/* En-têtes colorés */
+.col-header{font-weight:800;padding:14px;border-radius:8px;color:#fff;text-align:center;font-size:0.9rem;text-transform:uppercase;letter-spacing:0.05em;box-shadow: 0 4px 6px rgba(0,0,0,0.1);}
+.col-header.red{background:var(--red)}
+.col-header.orange{background:var(--orange)}
+.col-header.yellow{background:var(--yellow)}
+.col-header.lime{background:var(--lime)}
+.col-header.blue{background:var(--blue)}
+
+/* Style des cellules (cartes) */
+.cell{
+  display:flex; flex-direction:column;
+  padding:18px; border-radius:12px;
+  min-height:180px; /* Hauteur min pour uniformité */
+  background:#fff;
+  border:1px solid var(--border);
+  box-shadow:0 4px 6px rgba(0,0,0,0.02);
+  transition:all .25s ease;
+  position:relative; overflow:hidden;
+}
+.cell:hover{
+  transform:translateY(-5px) !important;
+  box-shadow:0 15px 30px rgba(0,0,0,0.1);
+  border-color:#cbd5e1;
+  z-index: 10;
+}
+
+/* Bordures colorées à gauche */
+.cell-red{border-left:5px solid var(--red); background:linear-gradient(to bottom right, #fff, #fff5f5)}
+.cell-deepred{border-left:5px solid #7f1d1d; background:linear-gradient(to bottom right, #fff, #fff5f5)}
+
+.cell-orange{border-left:5px solid var(--orange); background:linear-gradient(to bottom right, #fff, #fff7ed)}
+.cell-deeporange{border-left:5px solid #9a3412; background:linear-gradient(to bottom right, #fff, #fff7ed)}
+
+.cell-yellow{border-left:5px solid var(--yellow); background:linear-gradient(to bottom right, #fff, #fefce8)}
+.cell-deepyellow{border-left:5px solid #713f12; background:linear-gradient(to bottom right, #fff, #fefce8)}
+
+.cell-lime{border-left:5px solid var(--lime); background:linear-gradient(to bottom right, #fff, #f7fee7)}
+.cell-blue{border-left:5px solid var(--blue); background:linear-gradient(to bottom right, #fff, #eff6ff)}
+
+.cell-empty{background:transparent;border:none;box-shadow:none; pointer-events: none;}
+
+/* Contenu de la cellule */
+.cell-level{font-weight:800; font-size:1.1rem; margin-bottom:6px; color:var(--text)}
+.cell-desc{color:var(--muted); font-size:0.9rem; line-height:1.3; margin-bottom: 10px; font-weight: 500;}
+
+/* Liste des Apprentissages Critiques (AC) DANS LA GRILLE */
+.ac-mini-list {
+  margin: auto 0 0 0; /* Pousse vers le bas */
+  padding: 8px 0 0 0; 
+  list-style: none;
+  border-top: 1px dashed #e2e8f0;
+}
+.ac-mini-list li {
+  font-size: 0.7rem; color: #64748b; margin-bottom: 3px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  padding-left: 6px; border-left: 2px solid #cbd5e1;
+}
+
+/* ===========================
+   Styles Pages Détails (SAE/AC)
+   =========================== */
+.skill-header { padding: 40px; border-radius: 12px; color: #fff; margin-bottom: 30px; text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+.skill-header.theme-red { background: var(--red); }
+.skill-header.theme-orange { background: var(--orange); }
+.skill-header.theme-yellow { background: var(--yellow); }
+.skill-header.theme-lime { background: var(--lime); }
+.skill-header.theme-blue { background: var(--blue); }
+
+.sae-detail-card { background: #fff; border-radius: 10px; padding: 25px; margin-bottom: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #f1f5f9; }
+.sae-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #f1f5f9; padding-bottom: 15px; margin-bottom: 15px; }
+.sae-tag { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; padding: 4px 10px; border-radius: 20px; background: #f1f5f9; color: #475569; }
+
+.ac-full-list { list-style: none; padding: 0; }
+.ac-full-list li { margin-bottom: 8px; padding: 8px 12px; background: #f8fafc; border-radius: 6px; border-left: 4px solid; font-size: 0.95rem; }
+/* Couleurs des bordures AC */
+.theme-red .ac-full-list li { border-color: var(--red); }
+.theme-orange .ac-full-list li { border-color: var(--orange); }
+.theme-yellow .ac-full-list li { border-color: var(--yellow); }
+.theme-lime .ac-full-list li { border-color: var(--lime); }
+.theme-blue .ac-full-list li { border-color: var(--blue); }
+
+.sae-skills-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 10px; margin-top: 15px; }
+.sae-skill-item { padding: 10px; background: #f8fafc; border-radius: 6px; border: 1px solid #e2e8f0; font-size: 0.9rem; }
+.sae-skill-item strong { display: block; color: var(--text); margin-bottom: 4px; }
+
+/* ===========================
+   Animations & Responsive
+   =========================== */
+.reveal{opacity:0;transform:translateY(24px);transition:all .7s ease}
+.reveal.visible{opacity:1;transform:none}
+.animate{transform:translateY(20px);opacity:0;transition:all .6s ease}
+.animate.visible{transform:none;opacity:1}
+.tilt{transform-style:preserve-3d}
+
+@media (max-width:1100px){ .competence-grid{ grid-template-columns: repeat(3, 1fr); } .cell-empty{ display: none; } }
+@media (max-width:700px){ .competence-grid{ grid-template-columns: 1fr; } .col-header { display: none; } .main-nav{display:none} .mobile-toggle{display:block} }
+
+/* Footer */
+.site-footer{padding:30px 0;border-top:1px solid var(--border);margin-top:40px;text-align:center;color:var(--muted);font-size:0.9rem}

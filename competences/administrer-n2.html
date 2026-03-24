@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Administrer N2 — Portfolio</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <a href="../index.html#competences" class="btn-outline">← Retour au portfolio</a>
+
+    <div class="skill-header theme-red">
+      <h1>Administrer - Niveau 2</h1>
+      <p>Administrer un réseau d'entreprise</p>
+    </div>
+
+    <div class="sae-detail-card theme-red">
+      <div class="sae-header"><h2>Bilan de compétences</h2></div>
+      <div class="grid-2">
+        <div>
+          <h3>Ce que j'ai appris</h3>
+          <p>J'ai appris à concevoir une architecture réseau <strong>3-Tier</strong> robuste. Je ne configure plus des équipements isolés, mais un système complet incluant la redondance (HSRP, STP) et la sécurité (ACL). J'ai aussi intégré les services vitaux (DNS, SMTP) à l'infrastructure.</p>
+        </div>
+        <div>
+          <h3>Difficulté rencontrée</h3>
+          <p><span style="color:#eab308; font-size:1.2rem">★★★★☆</span> (4/5)</p>
+          <p class="small muted">La complexité réside dans le débogage du routage dynamique (OSPF) et l'interaction entre les VLANs et les ACLs. Une erreur de masque ou de zone peut isoler tout un service.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="sae-detail-card theme-red">
+      <div class="sae-header"><h2>Apprentissages Critiques (AC) validés</h2></div>
+      <ul class="ac-full-list">
+        <li>AC21.01 | Configurer et dépanner le routage dynamique (OSPF)</li>
+        <li>AC21.02 | Configurer la QoS et la sécurité (ACL, Port Security)</li>
+        <li>AC21.03 | Déployer des solutions virtualisées</li>
+        <li>AC21.04 | Déployer des services réseaux avancés (DNS, SMTP)</li>
+        <li>AC21.05 | Identifier les architectures Internet</li>
+        <li>AC21.06 | Travailler en équipe sur une infrastructure commune</li>
+      </ul>
+    </div>
+
+    <div class="sae-detail-card theme-red">
+      <div class="sae-header">
+        <h2>SAE 3.01 : Installation Réseau Campus</h2>
+        <span class="sae-tag">Projet Semestre 3</span>
+      </div>
+      <p class="section-sub"><strong>AC validés :</strong> AC21.01, AC21.02, AC21.06</p>
+      <div class="sae-content">
+        <p>Déploiement complet d'une infrastructure de campus simulée sur matériel Cisco.</p>
+        <div class="sae-skills-list">
+          <div class="sae-skill-item"><strong>Routage :</strong> OSPF Multi-Area, Routage Inter-VLAN</div>
+          <div class="sae-skill-item"><strong>Haute Dispo :</strong> HSRP (Redondance passerelle), EtherChannel (LACP)</div>
+          <div class="sae-skill-item"><strong>Sécurité :</strong> ACLs étendues, Sécurisation des ports (VLAN Hopping)</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sae-detail-card theme-red">
+      <div class="sae-header">
+        <h2>Ressources Théoriques Associées</h2>
+        <span class="sae-tag">Savoirs</span>
+      </div>
+      <div class="sae-content">
+        <div class="grid-2">
+          <div>
+            <h3>R3.01 - Réseaux de Campus</h3>
+            <p class="small muted">Théorie du Spanning-Tree, OSPF, Architecture Switch L3. (Lien avec AC21.01)</p>
+          </div>
+          <div>
+            <h3>R3.03 - Services Réseaux</h3>
+            <p class="small muted">Fonctionnement détaillé du DNS (Zones, Enregistrements) et de la messagerie SMTP. (Lien avec AC21.04)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="../js/script.js"></script>
+</body>
+</html>

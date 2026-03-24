@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Connecter N1 — Cyril Godart</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<main class="container">
+    <nav class="nav-back">
+        <a href="../index.html" class="btn-back">← Retour au tableau</a>
+    </nav>
+
+    <header class="skill-header theme-orange">
+        <h1>Compétence : Connecter</h1>
+        <p>Niveau 1 : Transmissions, IoT et Téléphonie (S1 & S2)</p>
+    </header>
+
+    <article class="sae-detail-card theme-orange">
+        <div class="sae-header">
+            <h2>SAE 1.03 : Physique des Transmissions</h2>
+            <span class="sae-tag">Semestre 1 • 30h</span>
+        </div>
+        <div class="sae-content">
+            <p><strong>Contexte :</strong> Avant de connecter des machines, il faut comprendre comment l'information voyage. Cette SAE portait sur la modélisation mathématique et la simulation des signaux.</p>
+            
+            <h3>Travaux réalisés :</h3>
+            <ul>
+                <li><strong>Modélisation Mathématique :</strong> Calcul des paramètres fondamentaux d'un signal sinusoïdal (Amplitude, Fréquence, Phase, Période) et analyse des signaux complexes.</li>
+                <li><strong>Simulation sous Matlab/Simulink :</strong> Création de chaînes de transmission virtuelles. J'ai appris à paramétrer le "Solver" (pas de calcul) pour éviter les erreurs d'aliasing ou de précision temporelle.</li>
+            </ul>
+
+            <h3>Difficulté spécifique :</h3>
+            <p>L'interface de Simulink et Matlab n'est pas intuitive. J'ai dû apprendre à déboguer des schémas-blocs où une simple erreur de type de variable empêchait toute la simulation. C'était une première approche rigoureuse de l'ingénierie.</p>
+        </div>
+    </article>
+
+    <article class="sae-detail-card theme-orange">
+        <div class="sae-header">
+            <h2>SAE 2.02 : Analyse Spectrale & Filtrage Numérique</h2>
+            <span class="sae-tag">Semestre 2</span>
+        </div>
+        <div class="sae-content">
+            <p><strong>Contexte :</strong> Passage du domaine temporel au domaine fréquentiel pour caractériser des systèmes de transmission réels.</p>
+            
+            <h3>Compétences Techniques :</h3>
+            <div class="sae-skills-list">
+                <div class="sae-skill-item"><strong>FFT (Fast Fourier Transform) :</strong> Utilisation de la FFT pour décomposer un signal et visualiser ses harmoniques.</div>
+                <div class="sae-skill-item"><strong>Filtrage :</strong> Conception et application de filtres (Passe-Bas, Passe-Bande) pour nettoyer un signal bruité et améliorer le rapport Signal/Bruit (SNR).</div>
+                <div class="sae-skill-item"><strong>Mesure :</strong> Manipulation d'analyseurs de spectre réels et virtuels (GNU Radio).</div>
+            </div>
+        </div>
+    </article>
+
+    <article class="sae-detail-card theme-orange">
+        <div class="sae-header">
+            <h2>SAE 2.1 : Téléphonie IP (ToIP) & Réseaux IoT</h2>
+            <span class="sae-tag">Semestre 2</span>
+        </div>
+        <div class="sae-content">
+            <p><strong>Contexte :</strong> Mise en œuvre de réseaux de communication spécialisés dans l'infrastructure de la pépinière.</p>
+            
+            <h3>1. Téléphonie sur IP (VoIP/ToIP)</h3>
+            <p>Installation d'un serveur IPBX (Asterisk/XiVO). Configuration des extensions, définition du plan de numérotation interne/externe et mise en place de la <strong>QoS (Quality of Service)</strong> sur les commutateurs pour prioriser la voix sur la data.</p>
+            
+            <h3>2. Internet des Objets (IoT - LoRaWAN)</h3>
+            <p>Déploiement de capteurs de température connectés en <strong>LoRa</strong>. J'ai réalisé une étude de couverture radio dans les bâtiments pour positionner optimalement la passerelle (Gateway). Récupération et décodage des trames via MQTT pour affichage sur tableau de bord.</p>
+        </div>
+    </article>
+
+</main>
+</body>
+</html>

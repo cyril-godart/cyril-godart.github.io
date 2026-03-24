@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Cyril Godart</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="bgFlow"></canvas>
+  
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#0f172a"/><path d="M7 12h10M12 7v10" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+        <div class="brand-text"><strong>Cyril Godart</strong><small>BUT R&T - Parcours ROM</small></div>
+      </a>
+      <nav class="main-nav">
+        <a href="#presentation">À propos</a>
+        <a href="#competences">Compétences</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="mobile-toggle" id="mobileToggle"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="presentation" class="intro card reveal">
+      <div class="intro-left">
+        <h1 class="big">B.U.T. Réseaux & Télécommunications</h1>
+        <p class="lead">Étudiant en parcours <strong>ROM</strong> (Réseaux Opérateurs et Multimédia).<br>Passionné par l'architecture réseau, la ToIP et le déploiement fibre.</p>
+        <div class="meta-row">
+          <a class="btn" href="#competences">Voir mes compétences</a>
+          <a class="btn-outline" href="CV.pdf" target="_blank">Mon CV</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="competences" class="competence-section">
+      <h2 class="section-title reveal">Tableau des Compétences</h2>
+      <p class="section-sub reveal">Cliquez sur une carte pour voir les projets (SAE) et preuves associés.</p>
+      
+      <div class="competence-grid" id="grid">
+        <div class="col-header red">ADMINISTRER</div>
+        <div class="col-header orange">CONNECTER</div>
+        <div class="col-header yellow">PROGRAMMER</div>
+        <div class="col-header lime">RAPPROCHER</div>
+        <div class="col-header blue">UNIFIER</div>
+
+        <a class="cell cell-red tilt" href="competences/administrer-n1.html">
+          <div class="cell-level">Niveau 1</div>
+          <div class="cell-desc">Assister l’administrateur</div>
+        </a>
+        <a class="cell cell-orange tilt" href="competences/connecter-n1.html">
+          <div class="cell-level">Niveau 1</div>
+          <div class="cell-desc">Transmissions et ToIP</div>
+        </a>
+        <a class="cell cell-yellow tilt" href="competences/programmer-n1.html">
+          <div class="cell-level">Niveau 1</div>
+          <div class="cell-desc">S’intégrer à un service IT</div>
+        </a>
+        <div class="cell cell-empty"></div>
+        <div class="cell cell-empty"></div>
+
+
+        <a class="cell cell-red tilt" href="competences/administrer-n2.html">
+          <div class="cell-level">Niveau 2</div>
+          <div class="cell-desc">Administrer un réseau</div>
+          <ul class="ac-mini-list">
+            <li>AC21.01 | Routage dynamique</li>
+            <li>AC21.02 | QoS & Sécurité</li>
+            <li>AC21.03 | Virtualisation</li>
+            <li>AC21.04 | Services avancés</li>
+          </ul>
+        </a>
+        <a class="cell cell-orange tilt" href="competences/connecter-n2.html">
+          <div class="cell-level">Niveau 2</div>
+          <div class="cell-desc">Maîtriser les composants</div>
+          <ul class="ac-mini-list">
+            <li>AC22.01 | Transmissions complexes</li>
+            <li>AC22.02 | Accès distant (VPN)</li>
+            <li>AC22.03 | Connexion multi-site</li>
+          </ul>
+        </a>
+        <a class="cell cell-yellow tilt" href="competences/programmer-n2.html">
+          <div class="cell-level">Niveau 2</div>
+          <div class="cell-desc">Application R&T</div>
+          <ul class="ac-mini-list">
+            <li>AC23.01 | Scripts d'admin</li>
+            <li>AC23.02 | App Web/Mobile</li>
+            <li>AC23.03 | Sockets Client/Serveur</li>
+          </ul>
+        </a>
+        
+        <a class="cell cell-lime tilt" href="competences/rapprocher-n1.html">
+          <div class="cell-level">Niveau 1</div>
+          <div class="cell-desc">Gérer les infrastructures opérateurs</div>
+          <ul class="ac-mini-list">
+            <li>AC24.01 | Déployer supports (Fibre/Cuivre)</li>
+            <li>AC24.02 | Connecter systèmes d'accès</li>
+          </ul>
+        </a>
+        <a class="cell cell-blue tilt" href="competences/unifier-n1.html">
+          <div class="cell-level">Niveau 1</div>
+          <div class="cell-desc">Mettre en oeuvre la téléphonie</div>
+          <ul class="ac-mini-list">
+            <li>AC25.01 | Installer IPBX</li>
+            <li>AC25.02 | Configurer terminaux</li>
+          </ul>
+        </a>
+
+
+        <a class="cell cell-deepred tilt" href="competences/administrer-n3.html">
+          <div class="cell-level">Niveau 3</div>
+          <div class="cell-desc">Concevoir un réseau</div>
+        </a>
+        <a class="cell cell-deeporange tilt" href="competences/connecter-n3.html">
+          <div class="cell-level">Niveau 3</div>
+          <div class="cell-desc">Déployer solution connexion/ToIP</div>
+        </a>
+        <a class="cell cell-deepyellow tilt" href="competences/programmer-n3.html">
+          <div class="cell-level">Niveau 3</div>
+          <div class="cell-desc">Piloter un projet R&T</div>
+        </a>
+        
+        <a class="cell cell-lime tilt" href="competences/rapprocher-n2.html">
+          <div class="cell-level">Niveau 2</div>
+          <div class="cell-desc">Services opérateurs</div>
+          <ul class="ac-mini-list">
+            <li>AC34.01 | Superviser infra</li>
+            <li>AC34.02 | Fonctions virtualisées</li>
+          </ul>
+        </a>
+        <a class="cell cell-blue tilt" href="competences/unifier-n2.html">
+          <div class="cell-level">Niveau 2</div>
+          <div class="cell-desc">Coms unifiées & Vidéo</div>
+          <ul class="ac-mini-list">
+            <li>AC35.01 | Services multimédias</li>
+          </ul>
+        </a>
+
+      </div>
+    </section>
+
+    <section id="contact" class="card contact reveal">
+      <h2>Contact</h2>
+      <p>Email : <a href="mailto:cyril.godart69@gmail.com">cyril.godart69@gmail.com</a></p>
+    </section>
+  </main>
+  
+  <footer class="site-footer">
+    <div class="container"><small>© 2025 — Cyril Godart — Portfolio</small></div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

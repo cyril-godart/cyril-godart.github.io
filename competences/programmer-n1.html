@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Programmer N1 — Cyril Godart</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<main class="container">
+    <nav class="nav-back">
+        <a href="../index.html" class="btn-back">← Retour au tableau</a>
+    </nav>
+
+    <header class="skill-header theme-yellow">
+        <h1>Compétence : Programmer</h1>
+        <p>Niveau 1 : Développement d'Outils & Traitement de Données (S1 & S2)</p>
+    </header>
+
+    <article class="sae-detail-card theme-yellow">
+        <div class="sae-header">
+            <h2>SAE 1.05 : Traitement de la Data (Open Data)</h2>
+            <span class="sae-tag">Semestre 1 • 25h</span>
+        </div>
+        <div class="sae-content">
+            <p><strong>Contexte :</strong> L'objectif était de valoriser des données publiques brutes (fichiers CSV volumineux) en les transformant en une application web graphique.</p>
+            
+            <h3>Architecture du projet :</h3>
+            <ul>
+                <li><strong>Back-end (Python) :</strong> Développement de scripts pour nettoyer les données (gestion des valeurs manquantes), filtrer les colonnes pertinentes et convertir le format CSV en JSON structuré. Utilisation de structures de données (listes, dictionnaires).</li>
+                <li><strong>Front-end (JS/PHP) :</strong> Intégration des données JSON dans une bibliothèque graphique (ex: Chart.js) pour visualiser les statistiques.</li>
+            </ul>
+
+            <h3>Défi technique :</h3>
+            <p>Le tri des données a été complexe : les fichiers sources contenaient des millions de lignes avec des formats parfois incohérents. J'ai dû écrire des algorithmes de validation rigoureux avant la conversion.</p>
+             <div class="sae-footer">
+                <a href="https://gitlab.univ-artois.fr/raphael_laurent/SAE-15/-/tree/main/code?ref_type=heads" target="_blank" class="btn-outline">Voir le Code Source (GitLab)</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="sae-detail-card theme-yellow">
+        <div class="sae-header">
+            <h2>SAE 2.1 : Automatisation & Scripting Hardware</h2>
+            <span class="sae-tag">Semestre 2</span>
+        </div>
+        <div class="sae-content">
+            <p><strong>Contexte :</strong> Automatisation des tâches administratives dans le projet de pépinière d'entreprise.</p>
+            
+            <h3>Réalisation : Reconnaissance de Badges</h3>
+            <p>J'ai développé un script <strong>Python</strong> complet capable de s'interfacer avec un lecteur de badges (RFID/NFC). Le programme :</p>
+            <ol>
+                <li>Écoute le port série/USB en attente d'un scan.</li>
+                <li>Récupère l'ID unique du badge.</li>
+                <li>Interroge une base de données locale ou un fichier CSV pour identifier l'utilisateur.</li>
+                <li>Déclenche une action (ouverture de session, log d'accès).</li>
+            </ol>
+            <p>Cela démontre ma capacité à lier la programmation logicielle avec des événements physiques (Hardware).</p>
+        </div>
+    </article>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,8 @@
+Introduction au projet SAE3.02.
+Ce fichier contient des mots clés pour tester la recherche.
+Ligne 3 : Le langage Python est puissant.
+Ligne 4 : Il permet de créer des sockets et des serveurs.
+Ligne 5 : Testons les opérateurs logiques : Python ET reseau.
+Ligne 6 : Un autre test : Java OU C++.
+Ligne 7 : Attention aux expressions régulières : Client-001, Client-002.
+Ligne 8 : Fin du fichier texte.

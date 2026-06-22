@@ -1,0 +1,5 @@
+paths:
+  IP8166:
+    source: rtsp://root:root@192.168.144.2:554/live.sdp
+  FE8391V:
+    source: rtsp://your_username:your_password@192.168.1.101:554/live.sdp

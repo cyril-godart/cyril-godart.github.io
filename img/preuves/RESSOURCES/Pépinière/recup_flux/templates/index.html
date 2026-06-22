@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>RAMBA SECURITY</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header class="text-center py-3 bg-light">
+        <img src="{{ url_for('static', filename='assets/RAMBA.png') }}" alt="RAMBA" style="height: 40px;" />
+        <h1>VIGILANCE</h1>
+    </header>
+    <main>
+        <div class="container my-4">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="stream-container">
+                        <h3>Flux principal</h3>
+                        <img src="http://192.168.1.24:4747/video" alt="Stream not available" class="img-fluid" style="background:#000; width:100%; height:auto;">
+                    </div>
+                </div>
+            </div>
+            <div class="camera-streams">
+                {% for cam in cameras %}
+                <div class="stream-container">
+                    <h3>{{ cam.name }}</h3>
+                    <video controls autoplay width="100%" height="auto">
+                        <source src="{{ cam.hls_url }}" type="application/vnd.apple.mpegurl">
+                        Votre navigateur ne supporte pas la lecture HLS.
+                    </video>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </main>
+</body>
+</html>

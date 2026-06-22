@@ -1,0 +1,12 @@
+Quel protocole travaille à la couche 4 du modèle OSI ?;IP;TCP;HTTP;Ethernet;B
+Quel port est utilisé par défaut pour SSH ?;21;23;22;80;C
+Quel protocole travaille à la couche 4 du modèle OSI ?;IP;TCP;HTTP;Ethernet;B
+Quel port est utilisé par défaut pour SSH ?;21;23;22;80;C
+Quel protocole travaille à la couche 4 du modèle OSI ?;IP;TCP;HTTP;Ethernet;B
+Quel port est utilisé par défaut pour SSH ?;21;23;22;80;C
+Quel protocole travaille à la couche 4 du modèle OSI ?;IP;TCP;HTTP;Ethernet;B
+Quel port est utilisé par défaut pour SSH ?;21;23;22;80;C
+Quel protocole travaille à la couche 4 du modèle OSI ?;IP;TCP;HTTP;Ethernet;B
+Quel port est utilisé par défaut pour SSH ?;21;23;22;80;C
+Quel protocole travaille à la couche 4 du modèle OSI ?;IP;TCP;HTTP;Ethernet;B
+Quel port est utilisé par défaut pour SSH ?;21;23;22;80;C

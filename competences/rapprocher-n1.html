@@ -3,55 +3,61 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Orchestrer N1 — Cyril Godart</title>
+  <title>Rapprocher N1 — Portfolio</title>
   <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
+  <div class="container">
+    <a href="../index.html#competences" class="btn-outline">← Retour au portfolio</a>
 
-<main class="container">
-    <nav class="nav-back">
-        <a href="../index.html" class="btn-back">← Retour au tableau</a>
-    </nav>
+    <div class="skill-header theme-lime">
+      <h1>Rapprocher - Niveau 1</h1>
+      <p>Gérer les infrastructures opérateurs</p>
+    </div>
 
-    <header class="skill-header theme-green">
-        <h1>Compétence : Orchestrer</h1>
-        <p>Niveau 1 : Gestion de Projet, Collaboration & Environnement</p>
-    </header>
-
-    <article class="sae-detail-card theme-green">
-        <div class="sae-header">
-            <h2>Méthodologie & Travail Collaboratif</h2>
-            <span class="sae-tag">Transverse (SAE 1.5 & 2.1)</span>
+    <div class="sae-detail-card theme-lime">
+      <div class="sae-header"><h2>Bilan de compétences</h2></div>
+      <div class="grid-2">
+        <div>
+          <h3>Ce que j'ai appris</h3>
+          <p>J'ai découvert les bases de l'infrastructure d'un opérateur de télécommunications, notamment le déploiement des supports physiques (fibre) et l'architecture des réseaux mobiles d'accès.</p>
         </div>
-        <div class="sae-content">
-            <p><strong>Contexte :</strong> Dans les projets techniques complexes (comme l'application de Data Vizualisation ou l'Infra Pépinière), la réussite dépend autant de l'organisation que du code.</p>
-            
-            <h3>Outils & Méthodes :</h3>
-            <ul>
-                <li><strong>Versionning (Git/GitLab) :</strong> Gestion centralisée du code source. Apprentissage des bonnes pratiques : commits réguliers, commentaires explicites, gestion des conflits lors des fusions (Merge).</li>
-                <li><strong>Planification :</strong> Utilisation de diagrammes de Gantt pour répartir les tâches dans le temps et visualiser le chemin critique du projet.</li>
-                <li><strong>Coordination :</strong> Réunions de synchronisation régulières pour aligner le travail du Back-end (Python) avec celui du Front-end (Web).</li>
-            </ul>
+        <div>
+          <h3>Difficulté rencontrée</h3>
+          <p><span style="color:#eab308; font-size:1.2rem">★★★★☆</span> (4/5)</p>
+          <p class="small muted">La mise en place de réseaux cellulaires complets nécessite une compréhension pointue des fréquences radio et de la compilation de logiciels complexes sous Linux.</p>
         </div>
-    </article>
+      </div>
+    </div>
 
-    <article class="sae-detail-card theme-green">
-        <div class="sae-header">
-            <h2>Gestion du Poste de Travail & Documentation</h2>
-            <span class="sae-tag">Quotidien</span>
-        </div>
-        <div class="sae-content">
-            <p><strong>Contexte :</strong> L'efficacité d'un administrateur réseaux dépend de la fiabilité de ses outils.</p>
-            
-            <h3>Compétences Organisationnelles :</h3>
-            <div class="sae-skills-list">
-                <div class="sae-skill-item"><strong>Virtualisation :</strong> Gestion de machines virtuelles (VirtualBox/VMWare) pour tester des configurations sans impacter le système hôte.</div>
-                <div class="sae-skill-item"><strong>Documentation :</strong> Rédaction de README.md clairs et de rapports techniques. Une solution technique n'a de valeur que si elle est documentée et reproductible.</div>
-                <div class="sae-skill-item"><strong>Rigueur :</strong> Organisation stricte des fichiers et respect des conventions de nommage.</div>
-            </div>
-        </div>
-    </article>
+    <div class="sae-detail-card theme-lime">
+      <div class="sae-header"><h2>Apprentissages Critiques (AC) validés</h2></div>
+      <ul class="ac-full-list">
+        <li>AC24.01 | Déployer les supports de transmission (Fibre/Cuivre)</li>
+        <li>AC24.02 | Connecter les systèmes d'accès et de collecte</li>
+      </ul>
+    </div>
 
-</main>
+    <div class="sae-detail-card theme-lime">
+      <div class="sae-header">
+        <h2>SAE 4 ROM.01 : Déployer un réseau 4G/5G</h2>
+        <span class="sae-tag">Projet Semestre 4</span>
+      </div>
+      <p class="section-sub"><strong>AC validés :</strong> AC24.01, AC24.02</p>
+      <div class="sae-content">
+        <p>Déploiement d'un réseau 4G/5G (srsRAN) et de ses services clients (srsUE, srsENB, srsEPC).</p>
+        <div class="sae-skills-list">
+          <div class="sae-skill-item"><strong>Ce que j'ai fait :</strong> J'ai déployé une architecture réseau 4G (LTE) complète basée sur le projet open-source srsRAN, incluant l'entité EPC (Cœur de réseau), eNodeB (Antenne radio) et UE (Utilisateur final) avec des interfaces radio UHD.</div>
+          <div class="sae-skill-item"><strong>Pourquoi je l'ai fait :</strong> Pour comprendre le fonctionnement interne d'un réseau opérateur mobile (Pile L1/2/3 complète) et mettre en pratique les concepts vus en cours de téléphonie cellulaire.</div>
+          <div class="sae-skill-item"><strong>Comment je l'ai fait (méthode, outils, ressources) :</strong> J'ai utilisé le projet srsRAN conforme aux spécifications 3GPP et O-RAN Alliance. J'ai compilé et configuré les services logiciels srsEPC, srsENB et srsUE sur des machines Linux pour établir une connectivité complète de bout en bout.</div>
+          <div class="sae-skill-item"><strong>Mes difficultés :</strong> L'installation et la compilation des dépendances logicielles de srsRAN sous Linux, ainsi que la configuration précise des fréquences radio pour faire communiquer l'UE avec l'eNodeB sans interférence.</div>
+          <div class="sae-skill-item"><strong>Ce que j'en ai appris :</strong> J'ai démystifié l'architecture des réseaux mobiles (CloudRAN) : j'ai vu que les antennes et le cœur de réseau fonctionnent désormais via des logiciels réseaux virtualisés (NFV) exécutables sur des PC standards.</div>
+          <div class="sae-skill-item"><strong>Ce que je ferais autrement :</strong> Je vérifierais systématiquement la compatibilité des versions de noyau Linux avec les pilotes des cartes radio (SDR) avant de lancer de longues compilations du code source.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="../js/script.js"></script>
 </body>
 </html>

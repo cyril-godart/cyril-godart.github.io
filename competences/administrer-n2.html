@@ -51,9 +51,12 @@
       <div class="sae-content">
         <p>Déploiement complet d'une infrastructure de campus simulée sur matériel Cisco.</p>
         <div class="sae-skills-list">
-          <div class="sae-skill-item"><strong>Routage :</strong> OSPF Multi-Area, Routage Inter-VLAN</div>
-          <div class="sae-skill-item"><strong>Haute Dispo :</strong> HSRP (Redondance passerelle), EtherChannel (LACP)</div>
-          <div class="sae-skill-item"><strong>Sécurité :</strong> ACLs étendues, Sécurisation des ports (VLAN Hopping)</div>
+          <div class="sae-skill-item"><strong>Ce que j'ai fait :</strong> J'ai configuré le routage dynamique (OSPF Multi-Area) et inter-VLAN. J'ai aussi mis en place des protocoles de haute disponibilité (HSRP, EtherChannel LACP) et sécurisé le réseau (ACLs étendues, protection contre le VLAN Hopping).</div>
+          <div class="sae-skill-item"><strong>Pourquoi je l'ai fait :</strong> Pour assurer la tolérance aux pannes d'un réseau d'entreprise et empêcher les accès non autorisés entre les différents départements.</div>
+          <div class="sae-skill-item"><strong>Comment je l'ai fait (méthode, outils, ressources) :</strong> Travail en équipe sur des commutateurs et routeurs physiques Cisco en baie de brassage. Utilisation des commandes IOS avancées.</div>
+          <div class="sae-skill-item"><strong>Mes difficultés :</strong> La synchronisation de l'état HSRP lors de pannes simulées et l'application d'ACLs sans couper l'accès au protocole de routage OSPF.</div>
+          <div class="sae-skill-item"><strong>Ce que j'en ai appris :</strong> L'importance de la redondance au niveau de la passerelle par défaut pour que les utilisateurs finaux ne remarquent aucune coupure.</div>
+          <div class="sae-skill-item"><strong>Ce que je ferais autrement :</strong> Je vérifierais systématiquement l'état des ports physiques (show ip interface brief) avant de chercher une erreur complexe dans ma configuration OSPF.</div>
         </div>
       </div>
     </div>
@@ -72,6 +75,44 @@
           <div>
             <h3>R3.03 - Services Réseaux</h3>
             <p class="small muted">Fonctionnement détaillé du DNS (Zones, Enregistrements) et de la messagerie SMTP. (Lien avec AC21.04)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sae-detail-card theme-red">
+      <div class="sae-header">
+        <h2>SAE 4.CYB.01 : Sécuriser un système d'information</h2>
+        <span class="sae-tag">Projet Semestre 4</span>
+      </div>
+      <p class="section-sub"><strong>AC validés :</strong> AC21.02</p>
+      <div class="sae-content">
+        <p>Sécurisation d'un réseau multi-sites d'entreprise sous PacketTracer et analyse de vulnérabilités.</p>
+        <div class="sae-skills-list">
+          <div class="sae-skill-item"><strong>Ce que j'ai fait :</strong> J'ai réalisé une maquette avec tunnel IPSEC GRE entre deux sites. J'ai segmenté le réseau en 3 LANs (Service, Production, Admin) avec des règles d'accès strictes (ACLs). J'ai également sécurisé le DNS (DNSSEC) et le WEB, et rédigé un Write Up complet intégrant les recommandations de l'ANSSI.</div>
+          <div class="sae-skill-item"><strong>Pourquoi je l'ai fait :</strong> Pour mettre en pratique les concepts de défense en profondeur et répondre aux exigences de sécurité d'une infrastructure d'entreprise distribuée géographiquement.</div>
+          <div class="sae-skill-item"><strong>Comment je l'ai fait (méthode, outils, ressources) :</strong> En groupe de 4, utilisation de PacketTracer pour le maquettage. Configuration des tunnels IPSEC GRE, mise en place d'ACLs pour isoler les LANs Service/Prod, et audit via la checklist Excel de l'ANSSI.</div>
+          <div class="sae-skill-item"><strong>Mes difficultés :</strong> La configuration croisée du tunnel IPSEC GRE et la traduction précise des règles de sécurité en ACLs sans bloquer l'accès global au réseau Admin.</div>
+          <div class="sae-skill-item"><strong>Ce que j'en ai appris :</strong> J'ai compris concrètement l'importance de segmenter les réseaux et comment auditer et appliquer les recommandations officielles sur une infrastructure.</div>
+          <div class="sae-skill-item"><strong>Ce que je ferais autrement :</strong> J'utiliserais un outil de simulation plus avancé que PacketTracer (comme GNS3) pour pouvoir tester de vraies attaques (Kali Linux) sur l'architecture maquettée.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sae-detail-card theme-red">
+      <div class="sae-header">
+        <h2>Ressources de Sécurité (S4)</h2>
+        <span class="sae-tag">Savoirs</span>
+      </div>
+      <div class="sae-content">
+        <div class="grid-2">
+          <div>
+            <h3>R4.01 - Infrastructures de sécurité</h3>
+            <p class="small muted">État de la menace, bases de la cryptographie asymétrique, et conception d'architectures réseaux sécurisées en entreprise.</p>
+          </div>
+          <div>
+            <h3>R4.Cyb.09 - Sécurité des réseaux LAN/WLAN</h3>
+            <p class="small muted">Sécurité sur Ethernet et Wi-Fi, mise en pratique d'attaques LAN (Kali Linux) et hacking de réseaux sans fil.</p>
           </div>
         </div>
       </div>

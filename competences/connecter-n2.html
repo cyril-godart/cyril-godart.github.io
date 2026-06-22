@@ -50,8 +50,12 @@
       <div class="sae-content">
         <p>Conception d'une chaîne de transmission numérique complète via GNU Radio.</p>
         <div class="sae-skills-list">
-          <div class="sae-skill-item"><strong>Traitement du signal :</strong> Modulations ASK, PSK, QAM et analyse spectrale.</div>
-          <div class="sae-skill-item"><strong>Mise en œuvre :</strong> Transmission réelle de flux Vidéo/Audio par ondes radio.</div>
+          <div class="sae-skill-item"><strong>Ce que j'ai fait :</strong> J'ai mis en œuvre des modulations numériques (ASK, PSK, QAM) et réalisé l'analyse spectrale d'un signal. J'ai ensuite transmis des flux vidéo et audio réels par ondes radio.</div>
+          <div class="sae-skill-item"><strong>Pourquoi je l'ai fait :</strong> Pour valider la théorie du traitement du signal en concevant un véritable émetteur/récepteur radio défini par logiciel (SDR).</div>
+          <div class="sae-skill-item"><strong>Comment je l'ai fait (méthode, outils, ressources) :</strong> Utilisation du logiciel GNU Radio pour créer les diagrammes de traitement du signal, couplé à des modules matériels Adalm-Pluto (SDR) pour l'émission/réception physique.</div>
+          <div class="sae-skill-item"><strong>Mes difficultés :</strong> Calibrer parfaitement le gain d'émission et de réception pour éviter la saturation du signal tout en conservant une bonne constellation QAM.</div>
+          <div class="sae-skill-item"><strong>Ce que j'en ai appris :</strong> J'ai vu en pratique l'effet du bruit (SNR) sur un signal numérique et comment les algorithmes de récupération d'horloge stabilisent la réception.</div>
+          <div class="sae-skill-item"><strong>Ce que je ferais autrement :</strong> Je passerais plus de temps sur la phase de simulation "loopback" dans GNU Radio avant d'utiliser les antennes physiques.</div>
         </div>
       </div>
     </div>
@@ -59,10 +63,20 @@
     <div class="sae-detail-card theme-orange">
       <div class="sae-header">
         <h2>SAE 3.1.03 : QoS & Wi-Fi</h2>
-        <span class="sae-tag">Projet</span>
+        <span class="sae-tag">Projet Semestre 3</span>
       </div>
       <p class="section-sub"><strong>AC validés :</strong> AC22.01</p>
-      <p>Déploiement Wi-Fi Entreprise (WPA2-EAP) et priorisation des flux (QoS) pour garantir la qualité vidéo.</p>
+      <div class="sae-content">
+        <p>Déploiement Wi-Fi Entreprise et priorisation des flux.</p>
+        <div class="sae-skills-list">
+          <div class="sae-skill-item"><strong>Ce que j'ai fait :</strong> J'ai déployé un réseau Wi-Fi sécurisé en mode Entreprise (WPA2-EAP) lié à un serveur RADIUS, et configuré la QoS (Quality of Service) pour prioriser la vidéo.</div>
+          <div class="sae-skill-item"><strong>Pourquoi je l'ai fait :</strong> Pour répondre au besoin d'une entreprise moderne où la mobilité et les flux temps réel (visio) sont critiques.</div>
+          <div class="sae-skill-item"><strong>Comment je l'ai fait (méthode, outils, ressources) :</strong> Configuration de points d'accès (AP) Cisco via un contrôleur Wi-Fi (WLC) et marquage des paquets DSCP sur les switchs.</div>
+          <div class="sae-skill-item"><strong>Mes difficultés :</strong> L'intégration de l'authentification 802.1X entre le contrôleur Wi-Fi et le serveur d'authentification externe.</div>
+          <div class="sae-skill-item"><strong>Ce que j'en ai appris :</strong> Le Wi-Fi n'est pas qu'une connexion "plug and play", sa sécurisation et son optimisation demandent une architecture solide en arrière-plan.</div>
+          <div class="sae-skill-item"><strong>Ce que je ferais autrement :</strong> J'utiliserais un outil d'analyse de trames sans fil (Wireshark avec carte en mode monitor) pour mieux déboguer l'échange de clés (Handshake).</div>
+        </div>
+      </div>
     </div>
 
     <div class="sae-detail-card theme-orange">
@@ -75,6 +89,44 @@
         <div class="sae-skill-item"><strong>R3.05 - Transmissions :</strong> Codage en ligne, Modulation, Codage canal (Lien AC22.01)</div>
         <div class="sae-skill-item"><strong>R3.06 - Fibre Optique :</strong> Réflectométrie, Soudure, Bilan de liaison (Lien AC22.04)</div>
         <div class="sae-skill-item"><strong>R3.07 - Réseaux d'accès :</strong> xDSL, GPON (FTTH), Architecture 4G/5G (Lien AC22.04)</div>
+      </div>
+    </div>
+
+    <div class="sae-detail-card theme-orange">
+      <div class="sae-header">
+        <h2>Ingénierie Radio, Cellulaire et Optique (S4)</h2>
+        <span class="sae-tag">R4.02 / R4.03 / R4.04</span>
+      </div>
+      <p class="section-sub"><strong>AC validés :</strong> AC22.01, AC22.04</p>
+      <div class="sae-content">
+        <p>Étude et mise en œuvre des transmissions sans fil avancées et des réseaux mobiles (2G à 5G).</p>
+        <div class="sae-skills-list">
+          <div class="sae-skill-item"><strong>Ce que j'ai fait :</strong> J'ai caractérisé et mesuré des dispositifs radio/optiques (ROS/TOS, diagramme de rayonnement, bilan de liaison). J'ai étudié les modulations (OFDM, CDMA, MIMO) et l'ingénierie radio des réseaux cellulaires (GSM jusqu'à 5G NR, cartographie).</div>
+          <div class="sae-skill-item"><strong>Pourquoi je l'ai fait :</strong> Pour maîtriser la couche physique des transmissions modernes et comprendre les choix d'architecture des réseaux mobiles face aux contraintes (trajets multiples, interférences).</div>
+          <div class="sae-skill-item"><strong>Comment je l'ai fait (méthode, outils, ressources) :</strong> Par des calculs théoriques de bilan de liaison (UL/DL, mmWave) et des TP d'analyse de signaux. J'ai aussi effectué une veille technologique (webinaire).</div>
+          <div class="sae-skill-item"><strong>Mes difficultés :</strong> L'appréhension des concepts mathématiques avancés (correction d'erreurs, traitement du signal) et la compréhension fine du fonctionnement MIMO ou de l'étalement de spectre.</div>
+          <div class="sae-skill-item"><strong>Ce que j'en ai appris :</strong> J'ai une vision complète de l'évolution des réseaux cellulaires et de la complexité matérielle requise pour garantir le débit et la couverture radio.</div>
+          <div class="sae-skill-item"><strong>Ce que je ferais autrement :</strong> Je m'appuierais davantage sur des logiciels de simulation photonique et radio pour visualiser l'impact des interférences inter-symboles avant de faire les calculs manuels.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sae-detail-card theme-orange">
+      <div class="sae-header">
+        <h2>R4.Cyb.10 - Cryptographie</h2>
+        <span class="sae-tag">Savoirs</span>
+      </div>
+      <p class="section-sub"><strong>AC validés :</strong> AC22.02</p>
+      <div class="sae-content">
+        <p>Bases mathématiques de la cryptographie moderne et application.</p>
+        <div class="sae-skills-list">
+          <div class="sae-skill-item"><strong>Ce que j'ai fait :</strong> J'ai étudié l'arithmétique modulaire et le fonctionnement détaillé du chiffrement asymétrique (notamment l'algorithme RSA).</div>
+          <div class="sae-skill-item"><strong>Pourquoi je l'ai fait :</strong> Pour comprendre "sous le capot" comment les VPN et les échanges sécurisés garantissent l'authenticité et la confidentialité.</div>
+          <div class="sae-skill-item"><strong>Comment je l'ai fait (méthode, outils, ressources) :</strong> Au travers de cours théoriques et de Travaux Dirigés (TD) de calculs cryptographiques et de correction d'algorithmes.</div>
+          <div class="sae-skill-item"><strong>Mes difficultés :</strong> La rigueur mathématique exigée par l'arithmétique modulaire (calcul de clés publiques/privées à la main).</div>
+          <div class="sae-skill-item"><strong>Ce que j'en ai appris :</strong> Je comprends désormais les mécanismes qui sous-tendent les certificats numériques et les tunnels d'accès distants sécurisés.</div>
+          <div class="sae-skill-item"><strong>Ce que je ferais autrement :</strong> J'implémenterais ces algorithmes en Python (compétence Programmer) pour automatiser les calculs vus en TD et mieux visualiser la génération des clés.</div>
+        </div>
       </div>
     </div>
 

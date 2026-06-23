@@ -241,9 +241,12 @@
       <p class="section-sub"><strong>AC validés :</strong> AC21.02</p>
       <div class="sae-content">
         <div class="sae-skills-list">
-          <div class="sae-skill-item"><strong>Ce que j'ai fait :</strong> Configuration de pare-feux (Fortinet) et analyse de l'état de la menace (cryptographie asymétrique).</div>
-          <div class="sae-skill-item"><strong>Pourquoi je l'ai fait :</strong> Pour protéger le système d'information et transformer les réseaux d'entreprise.</div>
-          <div class="sae-skill-item"><strong>Ce que j'en ai appris :</strong> Les principes d'une architecture réseau sécurisée en entreprise.</div>
+          <div class="sae-skill-item"><strong>Ce que j'ai fait :</strong> J'ai configuré des pare-feux nouvelle génération (Fortinet) et analysé l'état de la menace informatique.</div>
+          <div class="sae-skill-item"><strong>Pourquoi je l'ai fait :</strong> Pour protéger de bout en bout le système d'information d'une entreprise face aux attaques externes et internes.</div>
+          <div class="sae-skill-item"><strong>Comment je l'ai fait (méthode, outils, ressources) :</strong> Création de règles de filtrage (Firewall Policies), mise en place de VPN IPsec et étude des concepts de cryptographie asymétrique.</div>
+          <div class="sae-skill-item"><strong>Mes difficultés :</strong> Le dépannage (troubleshooting) des tunnels VPN IPsec (Phase 1 / Phase 2) lorsque les paramètres de chiffrement ne correspondent pas parfaitement.</div>
+          <div class="sae-skill-item"><strong>Ce que j'en ai appris :</strong> Qu'une architecture réseau sécurisée repose sur le principe du "Zero Trust" et sur la segmentation stricte des flux.</div>
+          <div class="sae-skill-item"><strong>Ce que je ferais autrement :</strong> J'utiliserais un outil de gestion centralisée (comme FortiManager) pour déployer mes règles de sécurité sur plusieurs pare-feux en même temps.</div>
         </div>
       </div>
     
@@ -265,8 +268,12 @@
       <p class="section-sub"><strong>AC validés :</strong> AC21.02</p>
       <div class="sae-content">
         <div class="sae-skills-list">
-          <div class="sae-skill-item"><strong>Ce que j'ai fait :</strong> Déploiement de protocoles de sécurité de niveau 2.</div>
-          <div class="sae-skill-item"><strong>Pourquoi je l'ai fait :</strong> Pour empêcher les attaques internes sur le réseau local.</div>
+          <div class="sae-skill-item"><strong>Ce que j'ai fait :</strong> J'ai déployé et configuré des protocoles de sécurité de niveau 2 (Port Security, DHCP Snooping, Dynamic ARP Inspection).</div>
+          <div class="sae-skill-item"><strong>Pourquoi je l'ai fait :</strong> Pour empêcher les attaques internes au réseau local (LAN), comme l'usurpation d'adresse IP ou le vol de session.</div>
+          <div class="sae-skill-item"><strong>Comment je l'ai fait (méthode, outils, ressources) :</strong> Travaux pratiques sur des commutateurs Cisco en appliquant les recommandations de durcissement réseau (Hardening).</div>
+          <div class="sae-skill-item"><strong>Mes difficultés :</strong> Comprendre le fonctionnement précis de l'inspection ARP dynamique et sa dépendance au binding DHCP.</div>
+          <div class="sae-skill-item"><strong>Ce que j'en ai appris :</strong> La sécurité commence dès le port Ethernet physique : un pare-feu de bordure ne sert à rien si le réseau local est vulnérable de l'intérieur.</div>
+          <div class="sae-skill-item"><strong>Ce que je ferais autrement :</strong> J'irais plus loin en mettant en place une authentification forte par port (802.1X avec un serveur RADIUS) pour chaque équipement branché.</div>
         </div>
       </div>
     
@@ -287,8 +294,12 @@
       <p class="section-sub"><strong>AC validés :</strong> AC21.04</p>
       <div class="sae-content">
         <div class="sae-skills-list">
-          <div class="sae-skill-item"><strong>Ce que j'ai fait :</strong> Durcissement (hardening) de serveurs.</div>
-          <div class="sae-skill-item"><strong>Comment je l'ai fait :</strong> Configuration avancée de pare-feux applicatifs et restriction des droits d'accès.</div>
+          <div class="sae-skill-item"><strong>Ce que j'ai fait :</strong> J'ai sécurisé des services réseaux vitaux (DNS, Web, Messagerie) sur des serveurs Linux.</div>
+          <div class="sae-skill-item"><strong>Pourquoi je l'ai fait :</strong> Pour garantir la disponibilité et l'intégrité des services métiers face aux tentatives d'intrusion applicatives.</div>
+          <div class="sae-skill-item"><strong>Comment je l'ai fait (méthode, outils, ressources) :</strong> Durcissement (hardening) du système d'exploitation, configuration avancée de pare-feux applicatifs (WAF) et restriction des droits (Chroot).</div>
+          <div class="sae-skill-item"><strong>Mes difficultés :</strong> Trouver le bon équilibre entre une sécurité stricte (qui bloque parfois des utilisateurs légitimes) et une fonctionnalité optimale.</div>
+          <div class="sae-skill-item"><strong>Ce que j'en ai appris :</strong> La nécessité absolue de limiter la surface d'attaque en désactivant tous les services inutiles et en mettant à jour le système (Patch Management).</div>
+          <div class="sae-skill-item"><strong>Ce que je ferais autrement :</strong> Je mettrais en place un système de centralisation des logs (SIEM) pour surveiller en temps réel les alertes générées par ces services sécurisés.</div>
         </div>
       </div>
     </div>

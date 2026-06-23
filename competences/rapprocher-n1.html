@@ -57,6 +57,18 @@
           <div class="sae-skill-item"><strong>Ce que j'en ai appris :</strong> J'ai démystifié l'architecture des réseaux mobiles (CloudRAN) : j'ai vu que les antennes et le cœur de réseau fonctionnent désormais via des logiciels réseaux virtualisés (NFV) exécutables sur des PC standards.</div>
           <div class="sae-skill-item"><strong>Ce que je ferais autrement :</strong> Je vérifierais systématiquement la compatibilité des versions de noyau Linux avec les pilotes des cartes radio (SDR) avant de lancer de longues compilations du code source.</div>
         </div>
+
+        <div style="margin-top: 2rem; padding: 1.5rem; background: rgba(0,0,0,0.2); border-radius: 8px;">
+          <h3 style="margin-bottom: 1rem; color: #fff;">Points clés (Explication détaillée) :</h3>
+          <ul style="list-style-type: none; padding-left: 0; line-height: 1.8;">
+            <li>🔸 <strong>Objectif principal :</strong> Comprendre la transition critique des opérateurs vers le <em>CloudRAN</em> et la virtualisation des fonctions réseaux (NFV).</li>
+            <li>🔸 <strong>Architecture déployée :</strong> LTE complète de bout en bout (Cœur de réseau EPC, Antenne eNodeB, Client UE) via le projet srsRAN.</li>
+            <li>🔸 <strong>Méthodologie technique :</strong> Compilation de code source sous Linux, configuration logicielle et émission physique via cartes radio logicielles (SDR).</li>
+            <li>🔸 <strong>Enjeu rencontré :</strong> Calibrage rigoureux des fréquences radio pour éviter les interférences mutuelles.</li>
+            <li>🔸 <strong>Prise de recul :</strong> L'infrastructure mobile moderne repose sur des serveurs standards virtualisés, remplaçant le matériel propriétaire onéreux.</li>
+          </ul>
+        </div>
+
       </div>
     </div>
       
@@ -67,27 +79,6 @@
           </div>
         </div>
       </div>
-      
-    <div class="sae-detail-card" style="background: rgba(255, 255, 255, 0.05); border-left: 4px solid #fff; margin-top: 3rem;">
-      <div class="sae-header">
-        <h2>📝 Support de présentation (Oral)</h2>
-        <span class="sae-tag" style="background: #fff; color: #000;">Notes</span>
-      </div>
-      <div class="sae-content" style="font-size: 1.1rem; line-height: 1.6;">
-        <p><strong>1. Introduction Rapprocher (AC24.01ROM) :</strong><br>
-        <em>"Je vais commencer par la compétence Rapprocher, et plus spécifiquement l'AC24.01ROM : Administrer les réseaux d'accès fixes et mobiles. C'est une compétence cruciale car elle touche à la base de notre connectivité."</em></p>
-        
-        <p><strong>2. Ce que j'ai fait (SAE 4 ROM.01) :</strong><br>
-        <em>"J'ai mis en œuvre une architecture LTE complète en utilisant le projet open-source srsRAN. J'ai déployé le cœur de réseau (l'EPC), l'antenne radio (l'eNodeB) et géré la connexion avec l'utilisateur final (l'UE)."</em></p>
-
-        <p><strong>3. Pourquoi et Comment :</strong><br>
-        <em>"Le but était de comprendre la transition des opérateurs vers le CloudRAN et la virtualisation des fonctions réseaux (NFV). J'ai travaillé sous Linux, compilé les services depuis le code source et utilisé des cartes radio logicielles (SDR) pour la transmission physique des ondes."</em></p>
-
-        <p><strong>4. Difficultés et Apprentissages :</strong><br>
-        <em>"La plus grande difficulté a été la gestion des interférences radio et la compilation des dépendances Linux. Cela m'a permis de démystifier le réseau mobile : aujourd'hui, un cœur de réseau peut tourner sur des serveurs standards. Si c'était à refaire, je serais beaucoup plus méthodique sur la préparation de l'environnement Linux pour éviter les problèmes de pilotes."</em></p>
-      </div>
-    </div>
-      
   </div>
   <script src="../js/script.js"></script>
 </body>

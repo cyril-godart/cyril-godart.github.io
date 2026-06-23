@@ -55,6 +55,18 @@
           <div class="sae-skill-item"><strong>Ce que j'en ai appris :</strong> J'ai maîtrisé le fonctionnement détaillé d'une transaction SIP (INVITE, OK, ACK) et l'importance de séparer les flux voix et données via des VLANs (VoIP VLAN).</div>
           <div class="sae-skill-item"><strong>Ce que je ferais autrement :</strong> Je systématiserais les tests de qualité de service (QoS) en saturant le lien réseau pour m'assurer que la voix reste prioritaire en toutes circonstances.</div>
         </div>
+
+        <div style="margin-top: 2rem; padding: 1.5rem; background: rgba(0,0,0,0.2); border-radius: 8px;">
+          <h3 style="margin-bottom: 1rem; color: #fff;">Points clés (Explication détaillée) :</h3>
+          <ul style="list-style-type: none; padding-left: 0; line-height: 1.8;">
+            <li>🔸 <strong>Objectif visé :</strong> Appréhender la logique de signalisation SIP, standard incontournable pour les flux en temps réel (Voix/Vidéo).</li>
+            <li>🔸 <strong>Cœur de l'architecture :</strong> Déploiement d'un IPBX Asterisk centralisé sur une machine virtuelle Linux.</li>
+            <li>🔸 <strong>Investigation réseau :</strong> Utilisation avancée de Wireshark pour décortiquer les trames réseau (requêtes INVITE, OK, ACK).</li>
+            <li>🔸 <strong>Résolution de problème :</strong> Diagnostic complexe du "one-way audio" causé par le blocage des flux vocaux (RTP) au niveau du NAT.</li>
+            <li>🔸 <strong>Architecture résiliente :</strong> Nécessité absolue de séparer (VLAN VoIP) et prioriser (QoS) les flux, la voix ne tolérant ni latence ni perte.</li>
+          </ul>
+        </div>
+
       </div>
     </div>
       
@@ -65,27 +77,6 @@
           </div>
         </div>
       </div>
-      
-    <div class="sae-detail-card" style="background: rgba(255, 255, 255, 0.05); border-left: 4px solid #fff; margin-top: 3rem;">
-      <div class="sae-header">
-        <h2>📝 Support de présentation (Oral)</h2>
-        <span class="sae-tag" style="background: #fff; color: #000;">Notes</span>
-      </div>
-      <div class="sae-content" style="font-size: 1.1rem; line-height: 1.6;">
-        <p><strong>1. Transition vers Unifier (AC25.01ROM) :</strong><br>
-        <em>"Je passe maintenant à ma deuxième compétence, Unifier. L'Apprentissage Critique choisi est l'AC25.01ROM : Choisir une architecture et déployer des services de Téléphonie sur IP."</em></p>
-
-        <p><strong>2. Ce que j'ai fait (SAE 3 Téléphonie) :</strong><br>
-        <em>"J'ai conçu et déployé intégralement la téléphonie d'une entreprise simulée. J'ai configuré un IPBX basé sur Asterisk, provisionné des téléphones et créé un plan de numérotation cohérent."</em></p>
-
-        <p><strong>3. Pourquoi et Comment :</strong><br>
-        <em>"La voix sur IP est le standard aujourd'hui. Je voulais comprendre la logique de signalisation SIP. J'ai monté le serveur sur une VM Linux et utilisé Wireshark pour décortiquer les trames réseau (INVITE, OK, ACK)."</em></p>
-
-        <p><strong>4. Difficultés et Apprentissages :</strong><br>
-        <em>"Ma plus grande difficulté a été la gestion du NAT qui bloquait les flux vocaux (RTP), causant du 'one-way audio'. J'ai appris que la téléphonie ne tolère ni latence ni perte de paquets, d'où l'importance de créer un VLAN Voix dédié. Si c'était à refaire, j'anticiperais la Qualité de Service (QoS) en saturant le réseau pour vérifier que la voix reste prioritaire."</em></p>
-      </div>
-    </div>
-      
   </div>
   <script src="../js/script.js"></script>
 </body>

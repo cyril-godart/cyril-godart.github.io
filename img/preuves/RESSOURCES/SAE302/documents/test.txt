@@ -1,0 +1,5 @@
+Linus Benedict Torvalds, né le 28 décembre 1969 à Helsinki en Finlande, est un informaticien américano-finlandais[2],[3] connu notamment pour avoir créé le noyau Linux en 1991 (à 21 ans).
+
+Il continue d'en diriger le développement, étant considéré comme le « dictateur bienveillant à vie » (Benevolent Dictator for Life) de celui-ci. Il a également créé le logiciel de gestion de versions décentralisée Git et le logiciel d'enregistrement et de planification des plongées Subsurface.
+
+En 2012, il reçoit le prix Millennium Technology, décerné par la Technology Academy Finland (en) pour son travail sur Linux. Il est également lauréat en 2014 du Computer Pioneer Award, décerné par l'IEEE Computer Society.
